@@ -5,4 +5,17 @@ html, body {
 #app {
     position: relative;
     height: 100%;
+    .home {
+        @include flexBox(column, flex-start, flex-start);
+        width: 100%;
+        height: 100%;
+
+        .page {
+            @include flexBox(column, flex-start, flex-start);
+            flex: 1;
+            width: 100%;
+            height: 100%;
+        }
+    }
+   
 }

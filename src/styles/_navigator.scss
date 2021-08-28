@@ -1,0 +1,21 @@
+.navigator {
+    @include flexBox(row, center, flex-start);
+    width: 100%;
+    height: 80px;
+    background: #efefef;
+
+    ul {
+        @include flexBox(row, center, flex-start);
+        li {
+            @include flexBox(row, center, flex-start);
+            box-sizing: border-box;
+            padding: 0.5rem 1rem;
+            font-size: 0.85rem;
+            cursor: pointer;
+            &:hover {
+                color: #666;
+                background: lighten($color: #000000, $amount: 80);
+            }
+        }
+    }
+}
